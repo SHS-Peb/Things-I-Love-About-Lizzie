@@ -20,3 +20,25 @@ for (let i = 0; i < orbCount; i++) {
   
   container.appendChild(orb);
 }
+
+const quoteEl = document.getElementById('quote');
+const fromEl = document.getElementById('from');
+const button = document.getElementById('new-quote');
+
+let quotes = [];
+
+fetch('quotes.json')
+  .then(res => res.json())
+  .then(data => {
+    quotes = data;
+    displayRandomQuote();
+  });
+
+function displayRandomQuote() {
+  if (quotes.length === 0) return;
+  const random = quotes[Math.floor(Math.random() * quotes.length)];
+  quoteEl.textContent = random.text;
+  fromEl.textContent = `— ${random.from}`;
+}
+
+button.addEventListener('click', displayRandomQuote);
