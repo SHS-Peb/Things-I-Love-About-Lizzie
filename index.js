@@ -42,3 +42,18 @@ function displayRandomQuote() {
 }
 
 button.addEventListener('click', displayRandomQuote);
+
+const photoArray = [
+  'photos/photo1.jpg',
+  'photos/photo2.jpg',
+];
+
+let photoIndex = 0;
+
+const photoDisplay = document.getElementById('photo-display');
+const nextPhotoBtn = document.getElementById('next-photo');
+
+nextPhotoBtn.addEventListener('click', () => {
+  photoIndex = (photoIndex + 1) % photoArray.length;
+  photoDisplay.src = photoArray[photoIndex];
+});
