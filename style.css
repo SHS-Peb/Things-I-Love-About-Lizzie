@@ -35,6 +35,17 @@ body {
     cursor: pointer;
   }
 
+  footer {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  color: #a8cced;
+  text-shadow: 1px 1px 3px rgba(0,0,0,1);
+  font-family: 'Arial', sans-serif;
+  }
+
  .orb-container {
   position: fixed;
   width: 100%;
