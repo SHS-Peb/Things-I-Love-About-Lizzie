@@ -1,52 +1,93 @@
 body {
-    font-family: Arial, sans-serif;
-    background-image: url(chihiro014.jpg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .container {
-    padding: 2em;
-    border-radius: 8px;
-    box-shadow: 5px 6px 15px rgba(0,0,0,5);
-    text-align: center;
-    max-width: 500px;
-    background: rgba(87, 167, 115, 0.85);
-  }
-  
-  #quote {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-  }
-  
-  #from {
-    font-style: italic;
-    color: #cddff3;
-  }
-  
-  button {
-    padding: 0.5em 1em;
-    background: #8cc0d3;
-    color: rgb(52, 50, 50);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+  font-family: Arial, sans-serif;
+  background-image: url(chihiro014.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  footer {
-  position: absolute;
-  bottom: 1em;
-  width: 100%;
+/* Main Layout Container */
+.content {
+  padding: 2rem;
+  z-index: 1;
+}
+
+/* Side-by-side row layout */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+
+/* Quote Container */
+.container {
+  background: rgba(87, 167, 115, 0.85);
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 5px 6px 15px rgba(0,0,0,0.5);
   text-align: center;
-  font-size: 1em;
-  color: #a8cced;
-  text-shadow: 1px 1px 3px rgba(0,0,0,1);
-  font-family: 'Arial', sans-serif;
-  }
+  width: 350px;
+  flex-shrink: 0;
+}
 
- .orb-container {
+
+#quote {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+#from {
+  font-style: italic;
+  color: #cddff3;
+}
+
+button {
+  padding: 0.5em 1em;
+  background: #8cc0d3;
+  color: rgb(52, 50, 50);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Photo Section */
+.photo-section {
+  text-align: center;
+  width: 350px;
+  flex-shrink: 0;
+}
+
+.photo-section img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1em;
+}
+
+.photo-section button {
+  padding: 0.5em 1em;
+  background: #d3a6e8;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Orb Background */
+.orb-container {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -83,25 +124,14 @@ body {
   }
 }
 
-.photo-section {
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
   text-align: center;
-  margin-top: 2em;
-}
-
-.photo-section img {
-  max-width: 90%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  margin-bottom: 1em;
-}
-
-.photo-section button {
-  padding: 0.5em 1em;
-  background: #d3a6e8;
-  color: #333;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
+  font-size: 1em;
+  color: #a8cced;
+  text-shadow: 1px 1px 3px rgba(0,0,0,1);
+  font-family: 'Arial', sans-serif;
 }
