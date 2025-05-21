@@ -28,23 +28,6 @@ body {
   padding: 2rem;
 }
 
-
-/* Quote Container */
-.container {
-  background: rgb(194, 217, 232);
-  padding: 2em;
-  border-radius: 8px;
-  box-shadow: 5px 6px 15px rgba(231, 225, 157, 0.5);
-  text-align: center;
-  width: 250px;
-  height: 250px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.5em;
-}
-
 .quote-section {
   display: flex;
   flex-direction: column;
@@ -52,6 +35,52 @@ body {
   gap: 1em;
   width: 300px;
   flex-shrink: 0;
+  position: relative;
+}
+
+/* Blue quote box */
+.container {
+  background: rgb(194, 217, 232);
+  border-radius: 8px;
+  box-shadow: 5px 6px 15px rgba(157, 231, 183, 0.5);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5em;
+  z-index: 1;
+  position: relative;
+}
+
+.quote-box-wrapper {
+  position: relative;
+  width: 320px;
+  height: 310px;
+}
+
+.cover {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Make sure the button is below everything and visible */
+#new-quote {
+  z-index: 3;
+  position: relative;
+  margin-top: 1em;
 }
 
 #quote {
@@ -67,16 +96,11 @@ body {
 button {
   padding: 0.5em 1em;
   background: #8cc0d3;
-  color: rgb(52, 50, 50);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1em;
-  padding: 0.5em 1em;
   color: #333;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 1em;
   font-weight: bold;
 }
 

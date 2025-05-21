@@ -21,6 +21,19 @@ for (let i = 0; i < orbCount; i++) {
   container.appendChild(orb);
 }
 
+document.getElementById("new-quote").addEventListener("click", () => {
+  const cover = document.getElementById("quote-cover");
+  if (cover) {
+    cover.style.display = "none";
+  }
+});
+
+document.getElementById('new-quote').addEventListener('click', () => {
+  const cover = document.getElementById('quote-cover');
+  cover.style.display = 'none'; // hide the cover
+  loadNewQuote(); // your existing function to load a quote
+});
+
 const quoteEl = document.getElementById('quote');
 const fromEl = document.getElementById('from');
 const button = document.getElementById('new-quote');
