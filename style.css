@@ -31,10 +31,10 @@ body {
 
 /* Quote Container */
 .container {
-  background: rgb(108, 182, 134);
+  background: rgb(194, 217, 232);
   padding: 2em;
   border-radius: 8px;
-  box-shadow: 5px 6px 15px rgba(0,0,0,0.5);
+  box-shadow: 5px 6px 15px rgba(231, 225, 157, 0.5);
   text-align: center;
   width: 250px;
   height: 250px;
@@ -61,7 +61,7 @@ body {
 
 #from {
   font-style: italic;
-  color: #cddff3;
+  color: #3b3b3b;
 }
 
 button {
@@ -92,7 +92,7 @@ button {
   height: 310px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.968);
   margin-bottom: 1em;
 }
 
