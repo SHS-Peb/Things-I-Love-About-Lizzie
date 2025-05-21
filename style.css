@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 10rem;
   flex-wrap: wrap;
   padding: 2rem;
 }
@@ -56,11 +56,10 @@ body {
 
 .quote-box-wrapper {
   position: relative;
-  width: 320px;
-  height: 310px;
+  width: 420px;
+  height: 410px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.968);
   margin-bottom: 1em;
 }
 
@@ -116,8 +115,8 @@ button {
 }
 
 .photo-section img {
-  width: 320px;
-  height: 310px;
+  width: 420px;
+  height: 410px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.968);
@@ -125,6 +124,7 @@ button {
 }
 
 .photo-section button {
+  margin-top: 8%;
   background: #d3a6e8;
 }
 
