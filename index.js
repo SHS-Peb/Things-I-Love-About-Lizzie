@@ -21,18 +21,12 @@ for (let i = 0; i < orbCount; i++) {
   container.appendChild(orb);
 }
 
-document.getElementById("new-quote").addEventListener("click", () => {
-  const cover = document.getElementById("quote-cover");
-  if (cover) {
-    cover.style.display = "none";
-  }
-});
-
 document.getElementById('new-quote').addEventListener('click', () => {
   const cover = document.getElementById('quote-cover');
-  cover.style.display = 'none'; // hide the cover
-  loadNewQuote(); // your existing function to load a quote
+  cover.style.display = 'none';
+  loadNewQuote(); 
 });
+
 
 const quoteEl = document.getElementById('quote');
 const fromEl = document.getElementById('from');
@@ -57,7 +51,6 @@ function displayRandomQuote() {
 button.addEventListener('click', displayRandomQuote);
 
 const photoArray = [
-  'photos/photo1.jpg',
   'photos/photo2.jpg',
 ];
 
@@ -69,4 +62,20 @@ const nextPhotoBtn = document.getElementById('next-photo');
 nextPhotoBtn.addEventListener('click', () => {
   photoIndex = (photoIndex + 1) % photoArray.length;
   photoDisplay.src = photoArray[photoIndex];
+});
+
+const music = document.getElementById("background-music");
+const toggleMusicBtn = document.getElementById("toggle-music");
+
+let isPlaying = false;
+
+toggleMusicBtn.addEventListener("click", () => {
+  if (!isPlaying) {
+    music.play();
+    toggleMusicBtn.textContent = "⏸️ Pause Music";
+  } else {
+    music.pause();
+    toggleMusicBtn.textContent = "🎵 Play Music";
+  }
+  isPlaying = !isPlaying;
 });
