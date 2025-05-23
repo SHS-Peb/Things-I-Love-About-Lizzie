@@ -166,6 +166,10 @@ button {
   }
 }
 
+#toggle-music {
+ background-color: rgb(134, 212, 147);
+}
+
 /* Footer */
 footer {
   position: absolute;
