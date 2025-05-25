@@ -167,7 +167,8 @@ button {
 }
 
 #toggle-music {
- background-color: rgb(247, 232, 96);
+ margin-bottom: 10%;
+  background-color: rgb(247, 232, 96);
 }
 
 /* Footer */
