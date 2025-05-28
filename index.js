@@ -1,6 +1,12 @@
 const container = document.querySelector('.orb-container');
 const orbCount = 30; // How many orbs
 
+fetch("https://complimentr.com/api")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("compliment").innerText = data.compliment;
+  });
+
 for (let i = 0; i < orbCount; i++) {
   const orb = document.createElement('div');
   orb.classList.add('orb');
