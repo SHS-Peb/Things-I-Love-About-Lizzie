@@ -12,6 +12,10 @@ body {
   justify-content: center;
 }
 
+#compliment{
+  color: beige;
+}
+
 /* Main Layout Container */
 .content {
   padding: 2rem;
