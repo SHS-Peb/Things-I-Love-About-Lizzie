@@ -13,9 +13,9 @@ fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://zenquo
       title: 'A Thought Just for You Lizzie!',
       text: complimentText,
       imageUrl: 'photos/icon.PNG', 
-      imageWidth: 250,
+      imageWidth: 280,
       imageHeight: 300,
-      background: 'black',
+      background: 'light pink',
       confirmButtonText: 'Aww!'
     });
 
