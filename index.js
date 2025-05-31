@@ -24,9 +24,11 @@ fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://zenquo
   .catch(err => {
     console.error("Failed to load compliment:", err);
     Swal.fire({
-      title: 'Oops!',
-      text: 'Could not load compliment right now 😢',
-      icon: 'error',
+      title: 'uhhh error I think',
+      text: 'My brain is not working rn babes',
+      imageUrl: 'photos/icon.PNG',
+      imageWidth: 280,
+      imageHeight: 300, 
     });
   });
 
