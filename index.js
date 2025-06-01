@@ -15,7 +15,7 @@ fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://zenquo
       imageUrl: 'photos/icon.PNG', 
       imageWidth: 280,
       imageHeight: 300,
-      background: 'light pink',
+      background: 'pink',
       confirmButtonText: 'Aww!'
     });
 
@@ -28,6 +28,7 @@ fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://zenquo
       text: 'My brain is not working rn babes',
       imageUrl: 'photos/icon.PNG',
       imageWidth: 280,
+      background:`green`,
       imageHeight: 300, 
     });
   });
