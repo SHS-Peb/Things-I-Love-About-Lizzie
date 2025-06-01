@@ -16,7 +16,13 @@ fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://zenquo
       imageWidth: 280,
       imageHeight: 300,
       background: 'pink',
-      confirmButtonText: 'Aww!'
+      confirmButtonText: 'Aww!',
+      showClass: {
+        popup: 'animate__animated animate__zoomIn'
+        },
+      hideClass: {
+        popup: 'animate__animated animate__zoomOut'
+        }
     });
 
     document.getElementById("compliment").innerText = complimentText;
