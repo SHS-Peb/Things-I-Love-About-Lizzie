@@ -12,6 +12,10 @@ body {
   justify-content: center;
 }
 
+.swal2-container {
+  backdrop-filter: blur(4px);
+}
+
 #compliment{
   color: beige;
 }
