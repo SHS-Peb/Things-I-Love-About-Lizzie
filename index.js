@@ -64,7 +64,7 @@ fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://zenquo
 document.getElementById('new-quote').addEventListener('click', () => {
   const cover = document.getElementById('quote-cover');
   cover.style.display = 'none';
-  loadNewQuote(); 
+  displayRandomQuote();
 });
 
 
