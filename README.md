@@ -57,7 +57,3 @@ No build step required. Simply open `index.html` in a browser to run locally or 
 - Ensure internet connectivity for fetching quotes from the external API.
 - Customize `quotes.json` to add or update local quotes.
 - Music playback requires user interaction (button click) due to browser autoplay restrictions.
-
----
-
-Made with ❤️ by Shan  
