@@ -31,6 +31,14 @@ This is a heartfelt interactive web page designed to celebrate and share thought
 - [SweetAlert2](https://sweetalert2.github.io/) for stylish popups
 - Fetch API for external data retrieval
 
+## Screenshots
+
+### Main Page
+![Main Page Screenshot](images/main-page-lizzie.PNG)
+
+### Quote Popup
+![Quote Box Screenshot](images/quote.PNG)
+
 ## File Structure (Overview)
 
 - `index.html` — Main HTML file.
