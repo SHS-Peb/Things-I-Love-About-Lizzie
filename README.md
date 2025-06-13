@@ -34,7 +34,7 @@ This is a heartfelt interactive web page designed to celebrate and share thought
 ## Screenshots
 
 ### Main Page
-![Main Page Screenshot](images/main-page-lizzie.PNG)
+![Main Page Screenshot](images/mainpagelizzie.PNG)
 
 ### Quote Popup
 ![Quote Box Screenshot](images/quote.PNG)
